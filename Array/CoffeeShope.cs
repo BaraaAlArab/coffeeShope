@@ -11,15 +11,22 @@ namespace Array
         private List<string> coffeeTypes;
         public CoffeeShope() 
         {
-            coffeeTypes = new List<string>{ "Americano", "Cafe au lait", "Espresso", "Cappuccino", "Macchiato" };
+            coffeeTypes = new List<string>();
+        }
+        public void AddCoffees()
+        {
+            Console.WriteLine("Enter the number of coffee types you want to add: ");
+            int count = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine($"Enter Coffee Type {i + 1}:");
+                coffeeTypes.Add(Console.ReadLine());
+            }
         }
         public void DisplayCoffees()
         {
-            Console.WriteLine("Different types of coffee:\t"+ string.Join(",",coffeeTypes));
-            //foreach (string coffee in coffeeTypes)
-            //{ ***here also work with line by line not on a same line***
-            //    Console.WriteLine(coffee);
-            //}
+            Console.Write("Different types of coffee;" + string.Join(",   ",coffeeTypes));
         }
     }
 }

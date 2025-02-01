@@ -15,19 +15,37 @@ namespace Array
         {
             items = new ArrayList();
         }
-        public void AddItems (params object[] newItems)
+        public void AddItems ()
         {
-            items.AddRange(newItems);
+            Console.Write("Enter the number of items you want to add: ");
+            int count = int.Parse(Console.ReadLine());
+            for (int i = 0; i < count; i++)
+            {
+                Console.Write($"Enter Item{i + 1}: ");
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out int intvalue))
+                {
+                    items.Add(intvalue);
+                } else if(double.TryParse(input,out double doublevalue))
+                {
+                    items.Add(doublevalue);
+                }else if(bool.TryParse(input,out bool boolvalue))
+                {
+                    items.Add(boolvalue);
+                }else if (string.IsNullOrEmpty(input))
+                {
+                    items.Add(null);
+                }
+                else
+                {
+                    items.Add(input);
+                }
+            }
         }
         public void DisplayItems()
         {
-            Console.WriteLine("\nItems in the collection:\t" + string.Join(",", items.ToArray()).Replace(", ,",", null"));
-            //foreach (var item in items) 
-            //here used line by line not on straight line
-            //{ 
-                
-            //    Console.WriteLine(item ?? "null"); 
-            //}
+            Console.WriteLine("Items in the collection:" + string.Join(",", items.ToArray()).Replace(", ,",", null"));
+            
         }
     }
 }

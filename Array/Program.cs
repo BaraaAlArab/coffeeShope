@@ -12,17 +12,13 @@ namespace Array
         static void Main(string[] args)
         {
             CoffeeShope coffeeShope = new CoffeeShope();
+            coffeeShope.AddCoffees();
             coffeeShope.DisplayCoffees();
 
-            ItemCollection collection1 = new ItemCollection();
-            collection1.AddItems(1, "Wael", "", true, 4.5, null);
-            collection1.DisplayItems();
+            ItemCollection collection = new ItemCollection();
+            collection.AddItems();
+            collection.DisplayItems();
 
-            ItemCollection collection2 = new ItemCollection();
-            collection2.AddItems(100, "Chair", "Black", true, 40.5);
-            collection2.AddItems(1, "Toyota", " ", false, 3.25, null);
-            collection2.DisplayItems();
-            
         }
     }
 }
