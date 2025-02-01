@@ -11,17 +11,23 @@ namespace Array
     {
         static void Main(string[] args)
         {
-            CoffeeShope coffeeShope = new CoffeeShope();
-            coffeeShope.DisplayCoffees();
+            //CoffeeShope coffeeShope = new CoffeeShope();
+            //coffeeShope.AddCoffees();
+            //coffeeShope.DisplayCoffees();
 
-            ItemCollection collection1 = new ItemCollection();
-            collection1.AddItems(1, "Wael", "", true, 4.5, null);
-            collection1.DisplayItems();
-
-            ItemCollection collection2 = new ItemCollection();
-            collection2.AddItems(100, "Chair", "Black", true, 40.5);
-            collection2.AddItems(1, "Toyota", " ", false, 3.25, null);
-            collection2.DisplayItems();
+            //ItemCollection collection = new ItemCollection();
+            //collection.AddItems();
+            //collection.DisplayItems();
+            Console.WriteLine("this array is not dynamic data\n");
+            var arlist = new ArrayList() { 100, "Baraa", "KIA", 5.2 };
+            var arlist2 = new ArrayList() { 200, "Toyota", 52 };
+            arlist.AddRange(arlist2);
+            arlist2.AddRange(arlist);
+            Console.Write("ArrayList Element are:   ");
+            for (int i = 0; i < arlist.Count; i++)
+            {
+                Console.Write(arlist[i]+"   ");
+            }
             
         }
     }
