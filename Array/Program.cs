@@ -23,7 +23,7 @@ namespace Array
             var arlist2 = new ArrayList() { 200, "Toyota", 52 };
             arlist.AddRange(arlist2);
             arlist2.AddRange(arlist);
-            Console.Write("ArrayList Element are:   ");
+            Console.Write("ArrayList Element are:  ");
             for (int i = 0; i < arlist.Count; i++)
             {
                 Console.Write(arlist[i]+"   ");
