@@ -11,13 +11,14 @@ namespace Array
     {
         static void Main(string[] args)
         {
-            //CoffeeShope coffeeShope = new CoffeeShope();
-            //coffeeShope.AddCoffees();
-            //coffeeShope.DisplayCoffees();
+            CoffeeShope coffeeshope = new CoffeeShope();
+            coffeeshope.AddCoffees();
+            coffeeshope.DisplayCoffees();
 
-            //ItemCollection collection = new ItemCollection();
-            //collection.AddItems();
-            //collection.DisplayItems();
+            ItemCollection collection = new ItemCollection();
+            collection.AddItems();
+            collection.DisplayItems();
+
             Console.WriteLine("this array is not dynamic data\n");
             var arlist = new ArrayList() { 100, "Baraa", "KIA", 5.2 };
             var arlist2 = new ArrayList() { 200, "Toyota", 52 };
