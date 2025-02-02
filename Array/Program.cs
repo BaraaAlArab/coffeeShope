@@ -11,10 +11,6 @@ namespace Array
     {
         static void Main(string[] args)
         {
-            CoffeeShope coffeeshope = new CoffeeShope();
-            coffeeshope.AddCoffees();
-            coffeeshope.DisplayCoffees();
-
             CoffeeShope coffeeShope = new CoffeeShope();
             coffeeShope.AddCoffees();
             coffeeShope.DisplayCoffees();
