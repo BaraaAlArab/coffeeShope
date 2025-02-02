@@ -15,6 +15,10 @@ namespace Array
             coffeeshope.AddCoffees();
             coffeeshope.DisplayCoffees();
 
+            CoffeeShope coffeeShope = new CoffeeShope();
+            coffeeShope.AddCoffees();
+            coffeeShope.DisplayCoffees();
+
             ItemCollection collection = new ItemCollection();
             collection.AddItems();
             collection.DisplayItems();
@@ -27,9 +31,8 @@ namespace Array
             Console.Write("ArrayList Element are:  ");
             for (int i = 0; i < arlist.Count; i++)
             {
-                Console.Write(arlist[i]+"   ");
+                Console.Write(arlist[i] + "   ");
             }
-            
         }
     }
 }
