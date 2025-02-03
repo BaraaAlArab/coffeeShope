@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayListOperations.cs" />
+    <Compile Include="OrderManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="CoffeeShope.cs" />
     <Compile Include="ItemCollection.cs" />
