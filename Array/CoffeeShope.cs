@@ -24,6 +24,7 @@ namespace Array
                 coffeeTypes.Add(Console.ReadLine());
             }
         }
+        
         public void DisplayCoffees()
         {
             Console.Write("Different types of coffee;" + string.Join(",   ",coffeeTypes));

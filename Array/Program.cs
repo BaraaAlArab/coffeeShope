@@ -29,12 +29,12 @@ namespace Array
             {
                 Console.Write(arlist[i] + "   ");
             }
-            var arr = new ArrayList() { 1, "HP", 300, 4.5 };
-            var arr1 = new ArrayList() { 0, "Toyota", 4000, 5.5 };
+            var arr = new ArrayList() { 1, "TurkishCoffee", 3, 4.5 };
+            var arr1 = new ArrayList() { 0, "ArabicCoffee", 4, 5.5 };
             int firstElement = (int)arr[0];
             string secondElement = (string)arr[1];
             arr1.InsertRange(2, arr);
-            arr.Insert(1, "BMW");
+            arr.Insert(1, "icedCoffee");
             foreach (var item2 in arr1)
             {
                 Console.WriteLine(item2);
@@ -44,6 +44,28 @@ namespace Array
                 Console.WriteLine(item);
             }
             Console.WriteLine(firstElement + " " + secondElement);
+            var arr3 = new ArrayList();
+            arr3.Add(100);
+            arr3.Add("Soha");
+            arr3.Add(300);
+            arr3.Add("Ah");
+            arr3.Add(4.5);
+            arr3.Add(300);
+            arr3.Remove("Soha");
+            arr3.RemoveAt(2);
+            arr3.RemoveRange(0, 4);
+            Console.WriteLine("Remove the array in the index 0:\n");
+            for (int i = 0; i < arr3.Count; i++)
+            {
+                Console.WriteLine(arr3[i]);
+            }
+            foreach (var item in arr3)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
 
         }
     }
