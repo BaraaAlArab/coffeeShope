@@ -34,9 +34,9 @@ namespace OrderSystem
 
             var match = orders.Find(x => x.Equals(order, StringComparison.OrdinalIgnoreCase));
 
-            if (order != null)
+            if (match != null)
             {
-                orders.Remove(order);
+                orders.Remove(match);
                 Console.WriteLine($"Your order '{order}' has been removed.");
             }
             else
