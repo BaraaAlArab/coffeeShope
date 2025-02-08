@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OrderSystem;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,18 +12,15 @@ namespace Array
     {
         static void Main(string[] args)
         {
-            //CoffeeShope coffeeShope = new CoffeeShope();
-            //coffeeShope.AddCoffees();
-            //coffeeShope.DisplayCoffees();
 
-            //ItemCollection collection = new ItemCollection();
-            //collection.AddItems();
-            //collection.DisplayItems();
 
             OrderManager orderManager = new OrderManager();
             while (true)
             {
-                Console.WriteLine("\nOrder Menu:");
+                Console.WriteLine("\n===============================");
+                Console.WriteLine("          ORDER MENU           ");
+                Console.WriteLine("===============================");
+                
                 Console.WriteLine("1. Add Order");
                 Console.WriteLine("2. Remove Order");
                 Console.WriteLine("3. View Orders");
@@ -46,7 +44,7 @@ namespace Array
                     
                     case "3":
                         
-                        orderManager.Displayorder();
+                        orderManager.DisplayOrder();
                         break;
 
                     case "4":

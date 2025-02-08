@@ -11,6 +11,13 @@ namespace Array
     {
         public ArrayListOperations() 
         {
+            CoffeeShope coffeeShope = new CoffeeShope();
+            coffeeShope.AddCoffees();
+            coffeeShope.DisplayCoffees();
+
+            ItemCollection collection = new ItemCollection();
+            collection.AddItems();
+            collection.DisplayItems();
 
             Console.WriteLine("this array is not dynamic data\n");
 
